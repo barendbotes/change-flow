@@ -1,0 +1,84 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Production
+/build
+/dist
+
+# Environment Variables
+.env
+.env*.local
+.env.development
+.env.test
+.env.production
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local files
+*.local
+
+# File Storage
+/storage
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# IDEs and editors
+/.idea
+/.vscode
+*.swp
+*.swo
+.DS_Store
+*.pem
+.project
+.classpath
+*.launch
+.settings/
+
+# TypeScript
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# Database
+*.sqlite
+*.sqlite3
+/prisma/migrations
+/drizzle/migrations/*.sql
+/drizzle/.snapshot
+
+# Misc
+.DS_Store
+*.pem
+.eslintcache
+.stylelintcache
+
+# Debug
+debug.log
+debug/
+
+# Temporary files
+*.tmp
+*.temp
+.cache
+
+# System Files
+Thumbs.db
+
+# File system
+/storage*
