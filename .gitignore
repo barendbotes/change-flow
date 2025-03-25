@@ -79,6 +79,3 @@ debug/
 
 # System Files
 Thumbs.db
-
-# File system
-/storage*
