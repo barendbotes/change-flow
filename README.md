@@ -1,3 +1,9 @@
+# ABOUT ME
+
+I am a complete novice "coder" who used Cursor for a lot of the code in this project. Please do not judge my coding style and if there are any bugs, I might be able to fix them, hopefully someone from the community can help.
+
+That said, I guess thank you for either your insult or your contribution. Real men commit to main!
+
 # Change Flow
 
 Change Flow is a modern web application built with Next.js that manages and streamlines IT change requests and asset requests within an organization. It provides a robust approval workflow system, file management, and integration capabilities.
