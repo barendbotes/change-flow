@@ -26,7 +26,7 @@ The application allows organizations to:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/change-flow.git
+git clone https://github.com/barendbotes/change-flow.git
 cd change-flow
 ```
 
@@ -71,24 +71,22 @@ npm run dev
 
 ## Initial Setup Scripts
 
-### Create Admin User
-
-```bash
-npm run setup:admin -- --email="admin@example.com" --password="securepassword"
-```
-
 ### Create Default Groups
 
 ```bash
-npm run setup:groups
+npm run setup:db
 ```
 
 This will create the following default groups:
 
 - IT
-- Finance
-- HR
-- Operations
+- Corporate
+
+### Create Admin User
+
+```bash
+npm run setup:admin -- --email="admin@example.com" --password="securepassword"
+```
 
 ## File Storage System
 
@@ -111,7 +109,6 @@ The application uses a two-tier file storage system:
 ### Authentication
 
 - `POST /api/auth/[...nextauth]` - Authentication endpoints
-- `GET /api/auth/session` - Get current session
 
 ### Requests
 
@@ -149,6 +146,18 @@ The application uses a two-tier file storage system:
 - ✅ Basic dashboard
 
 ## Roadmap
+
+### Clean UP
+
+- [ ] Clean up and Standardize
+  - Move all zod schema's to `/schema/index.ts`
+  - Separate server actions into clear actions in `/actions/`
+  - Separate server data retrievals clearly in `/data/`
+  - Ensure data retrieval done via component props
+  - Go through all API endpoints to ensure correct RBAC
+  - Go through all dashboard, requests, admin and reports pages and implement correct RBAC
+  - Maybe look at better RBAC management
+  - Convert more pages and functions into reusable components
 
 ### Integration Plugins
 
